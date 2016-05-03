@@ -10,13 +10,18 @@ export default class Calendar extends React.Component {
   constructor(props) {
     super(props);
 
-    var dataobj = require("json!./data.json");
-    console.log(dataobj.items[0].title);
 
+
+    this.state = {
+
+    }
 }
 
 
   render() {
+    var dataobj = require("json!./data.json");
+    console.log(dataobj.items[0].title);
+
 
     return (
       <div className="calendar">
@@ -51,7 +56,10 @@ export default class Calendar extends React.Component {
         </div>
       </div>
 
+        {dataobj.items.map(function(instance) {
+          return <Event title={dataobj.items.title} start_time={dataobj.items.start_time} location={dataobj.items.location} />
 
+        })}
 
 
       </div>

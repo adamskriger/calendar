@@ -22,15 +22,25 @@ export default class Event extends React.Component {
     }
 }
 
+  componentDidMount() {
+
+
+  }
 
   render() {
 
     return (
       <div className="event">
 
+
+      {this.props.title}
+      {this.props.start_time}
+      {this.props.location}
+
       {this.state.title}
       {this.state.start_time}
       {this.state.location}
+
 
 
       </div>

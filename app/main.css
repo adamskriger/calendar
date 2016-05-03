@@ -1,3 +1,8 @@
+* {
+  font-size: 20px;
+  border: 1px solid green;
+}
+
 body {
   background: white;
   font-family: sans-serif;
@@ -74,4 +79,59 @@ body {
 }
 .note:hover .delete-note {
   visibility: visible;
+}
+
+/*New Styles*/
+
+.calendar {
+  font-weight:100;
+  background: rgba(0,0,0,0.3);
+  color: black;
+  padding: 2rem;
+  height: 35rem;
+  width: 100%;
+  margin:2rem;
+  font-size: 3.2rem;
+  list-style: none;
+
+
+}
+
+.amContainer {
+  background-color: cornsilk;
+  height:100%;
+}
+
+.amSide {
+  border: 1px solid red;
+  width: 5%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+.linesContainer {
+  float: left;
+  display: inline-block;
+  height:10rem;
+  width: 95%;
+
+}
+
+.hour {
+  height:100%;
+  width:100%;
+}
+
+.time {
+  border: 1px solid red;
+  width: 5%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+
+}
+
+.halfHour {
+
 }

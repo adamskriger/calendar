@@ -26,6 +26,3 @@ var port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server initialized on // ${new Date()}`));
 
 //new configs//
-
-var dataobj = require("json!data.json");
-console.log(dataobj);

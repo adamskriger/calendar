@@ -3,13 +3,14 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 
-var customData = require('./data.json');
-console.log("This" + customData);
 
 export default class Calendar extends React.Component {
 
   constructor(props) {
     super(props);
+
+    var dataobj = require("json!./data.json");
+    console.log(dataobj);
 
 }
 

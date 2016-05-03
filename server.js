@@ -5,7 +5,8 @@ const logger     = require('morgan');
 const bodyParser = require('body-parser');
 const path       = require('path');
 const app        = express();
-const moment = =require('moment')
+const moment = =require('moment');
+const jsonloader - require('json-loader')
 
 if(process.env.NODE_ENV === 'development') {
   console.log('in development.');
@@ -25,3 +26,6 @@ var port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server initialized on // ${new Date()}`));
 
 //new configs//
+
+var dataobj = require("json!data.json");
+console.log(dataobj);

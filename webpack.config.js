@@ -25,7 +25,7 @@ const common = {
   // '' is needed to allow imports without an extension
   // note the .'s before the extension as it will fail to load without them
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx', '.json']
   },
   output: {
     path: PATHS.build,

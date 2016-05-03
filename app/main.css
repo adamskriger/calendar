@@ -118,12 +118,12 @@ body {
 
 }
 
-.hour {
+.hourBlock {
   height:100%;
   width:100%;
 }
 
-.time {
+.hour {
   border: 1px solid red;
   width: 5%;
   height: 100%;
@@ -133,5 +133,5 @@ body {
 }
 
 .halfHour {
-
+  margin-left: 8rem;
 }

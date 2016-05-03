@@ -11,10 +11,9 @@ import {Router, Route, IndexRoute} from 'react-router';
 export default (
 <Router>
 <Route path="/" component={App}>
+  <Route path="/event" component={Event} />
+
 </Route>
-<Route path="/about" component={About} />
-<Route path="/blogger" component={Blogger} />
-<Route path="blogshow/:key" component={BlogShow} />
 </Router>
 
 );

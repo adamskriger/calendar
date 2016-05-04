@@ -21,8 +21,8 @@ export default class Event extends React.Component {
     }
 }
 
-  componentDidMount() {
-
+  componentDidUpdate() {
+$('.eventDiv').insertBefore('#{this.props.time}')
 
   }
 
@@ -31,21 +31,19 @@ export default class Event extends React.Component {
   render() {
 
     var inlineEventStyle = {
-          top: 100 - (3 *(this.props.time)),
           backgroundColor: 'red',
           opacity: '.6',
           marginLeft: '.5rem',
           borderLeft: '8px solid green',
           display: 'inline-block',
-          float: 'left',
           position: 'relative'
-    }
+            }
 
 
     return (
 
 
-      <div style={inlineEventStyle}>
+      <div className={this.props.time} style={inlineEventStyle}>
 
       <div className="title">{this.props.title}</div>
       <div className="start_time">{this.props.start_time}</div>

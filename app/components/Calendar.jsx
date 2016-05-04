@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 import Event from './Event.jsx';
-
+var classNames = require('classnames');
 
 export default class Calendar extends React.Component {
 
@@ -40,7 +40,6 @@ export default class Calendar extends React.Component {
           <div className="hourBlock">
               <div className="time">
               {moment().format('9:00')}
-              <Event />
               </div>
               <div className="halfHour">
                 {moment().format('9:30')}

@@ -19,16 +19,17 @@ export default class Calendar extends React.Component {
 
 
   render() {
+
+    var timeStamp = function() {
+    var datafile = require("json!./data.json");
+
+    {datafile.items.map(function(instance) {
+      const timeElement= parseInt(instance.start_time);
+      console.log(timeElement);
+      return timeElement
+    })}
+}
     var dataobj = require("json!./data.json");
-
-    const inlineEventStyle = {
-      backgroundColor: 'white',
-      opacity: '.6',
-      marginLeft: '.5rem',
-      borderLeft: '8px solid green',
-      display: 'inline'
-
-    }
 
 
     return (
@@ -65,7 +66,7 @@ export default class Calendar extends React.Component {
       </div>
 
         {dataobj.items.map(function(instance) {
-          return <div style={inlineEventStyle}><Event key={instance.title} title={instance.title} start_time={instance.start_time} location={instance.location} /></div>
+          return <Event time={parseInt(instance.start_time)} key={instance.title} title={instance.title} start_time={instance.start_time} location={instance.location} />
 
         })}
 

@@ -126,12 +126,24 @@ body {
 .hour {
   border: 1px solid red;
   width: 5%;
-  height: 100%;
+  height: 5rem;
   float: left;
   display: inline-block;
+  background-color: red;
 
+}
+
+.time {
+  background-color: red;
+  height: 5rem;
 }
 
 .halfHour {
   margin-left: 8rem;
+  height: 5rem;
+  background-color: blue;
+}
+
+.event {
+
 }

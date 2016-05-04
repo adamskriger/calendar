@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 
-
 export default class Event extends React.Component {
 
   constructor(props) {
@@ -30,16 +29,13 @@ export default class Event extends React.Component {
   render() {
 
     return (
-      <div className="event">
 
 
-      {this.props.title}
-      {this.props.start_time}
-      {this.props.location}
+      <div>
 
-      
-
-
+      <div className="title">{this.props.title}</div>
+      <div className="start_time">{this.props.start_time}</div>
+      <div className="location">{this.props.location}</div>
 
       </div>
     );

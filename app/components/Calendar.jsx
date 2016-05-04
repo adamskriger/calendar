@@ -57,7 +57,7 @@ export default class Calendar extends React.Component {
       </div>
 
         {dataobj.items.map(function(instance) {
-          return <Event title={dataobj.items.title} start_time={dataobj.items.start_time} location={dataobj.items.location} />
+          return <Event key={instance.title} title={instance.title} start_time={instance.start_time} location={instance.location} />
 
         })}
 

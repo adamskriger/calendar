@@ -37,9 +37,7 @@ export default class Event extends React.Component {
       {this.props.start_time}
       {this.props.location}
 
-      {this.state.title}
-      {this.state.start_time}
-      {this.state.location}
+      
 
 
 

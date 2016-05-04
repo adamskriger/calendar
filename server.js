@@ -7,6 +7,8 @@ const path       = require('path');
 const app        = express();
 const moment = =require('moment');
 const jsonloader - require('json-loader')
+const ReactDOM = require('react-dom')
+
 
 if(process.env.NODE_ENV === 'development') {
   console.log('in development.');

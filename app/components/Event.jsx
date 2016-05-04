@@ -22,7 +22,6 @@ export default class Event extends React.Component {
 }
 
   componentDidUpdate() {
-$('.eventDiv').insertBefore('#{this.props.time}')
 
   }
 
@@ -43,7 +42,7 @@ $('.eventDiv').insertBefore('#{this.props.time}')
     return (
 
 
-      <div className={this.props.time} style={inlineEventStyle}>
+      <div className={this.props.start_time} style={inlineEventStyle}>
 
       <div className="title">{this.props.title}</div>
       <div className="start_time">{this.props.start_time}</div>

@@ -3,7 +3,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 import Event from './Event.jsx';
-var classNames = require('classnames');
+const classNames = require('classnames');
+const ReactDOM = require('react-dom')
+
 
 export default class Calendar extends React.Component {
 
@@ -17,6 +19,12 @@ export default class Calendar extends React.Component {
     }
 }
 
+  componentDidMount() {
+    var x= ReactDOM.findDOMNode(this.refs.moved)
+    console.log(this.props.start_time);
+
+  $('#nine').append(x)
+}
 
   render() {
 
@@ -38,7 +46,7 @@ export default class Calendar extends React.Component {
         <div className="amSide">AM</div>
         <div className="linesContainer">
           <div className="hourBlock">
-              <div className="time">
+              <div id="nine" className="time">
               {moment().format('9:00')}
               </div>
               <div className="halfHour">
@@ -64,10 +72,18 @@ export default class Calendar extends React.Component {
         </div>
       </div>
 
-        {dataobj.items.map(function(instance) {
-          return <div id={instance.start_time}> <Event time={parseInt(instance.start_time)} key={instance.title} title={instance.title} start_time={instance.start_time} location={instance.location} /></div>
-          {console.log(instance.start_time)}
-        })}
+            {dataobj.items.map( (instance) => {
+
+
+        return (
+          <div key={instance.title} className={instance.start_time} ref="moved">
+            <Event  time={parseInt(instance.start_time)}  title={instance.title} start_time={instance.start_time} location={instance.location} />
+          </div>
+        )
+
+
+
+})}
 
 
       </div>

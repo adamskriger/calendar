@@ -34,13 +34,35 @@ export default class Event extends React.Component {
 
   render() {
 
+    var inlineStartTimeStyle = {
+      fontSize: '1.5rem',
+      color: 'grey',
+      fontWeight: 'normal',
+      marginLeft: '1.1rem'
+    }
+
+    var inlineTitleStyle = {
+      marginLeft: '1.1rem'
+
+    }
+    var inlineLocationStyle = {
+      color: 'green',
+      fontSize: "1.7rem",
+      fontWeight: 'normal',
+      marginLeft: '1.1rem'
+
+    }
     var inlineEventStyle = {
-          backgroundColor: 'red',
-          opacity: '.6',
+          backgroundColor: 'white',
+          opacity: '.8',
           marginLeft: '.5rem',
           borderLeft: '8px solid green',
           display: 'inline-block',
-          position: 'relative'
+          position: 'relative',
+          height: '10rem',
+          width: '30%',
+          marginLeft: '1.1rem'
+
             }
 
 
@@ -49,9 +71,10 @@ export default class Event extends React.Component {
 
       <div className={this.props.start_time} style={inlineEventStyle}>
 
-      <div className="title">{this.props.title}</div>
-      <div className="start_time">{this.props.start_time}</div>
-      <div className="location">{this.props.location}</div>
+      <div className="start_time" style={inlineStartTimeStyle}>{this.props.start_time}&#8212;</div>
+      <div className="title" style={inlineTitleStyle}><strong>{this.props.title}</strong></div>
+
+      <div className="location" style={inlineLocationStyle}>{this.props.location} </div>
 
       </div>
     );

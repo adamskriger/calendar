@@ -39,6 +39,7 @@ export default class Calendar extends React.Component {
 
     return (
       <div className="calendar">
+      <div className="currentDate"> <div className="floatDate"> {moment().format('dddd, MMMM Do')}</div></div>
       <div className="amContainer">
         <div className="amSide">AM</div>
         <div className="linesContainer">
@@ -160,7 +161,7 @@ export default class Calendar extends React.Component {
 
         return (
           <div key={instance.title} className={instance.start_time} ref="moved">
-            <Event  time={parseInt(instance.start_time)}  title={instance.title} start_time={instance.start_time} location={instance.location} />
+            <Event  time={parseInt(instance.start_time)}  title={instance.title} start_time={instance.start_time} end_time={instance.end_time} location={instance.location} />
           </div>
         )
 

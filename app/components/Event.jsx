@@ -27,11 +27,11 @@ export default class Event extends React.Component {
   componentDidMount() {
     ReactDOM.findDOMNode(this)
     var x= this.props.start_time
-    var y= $('#9:00AM')
+    var y= document.getElementById(x)
     console.log(this.props.start_time);
     console.log(y);
 
-    y ?  $('#9:00AM').append(this) : console.log("Nope");
+    y ?  y.appendChild(this) : console.log("Nope");
 
 
 }

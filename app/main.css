@@ -90,7 +90,7 @@ body {
   background: rgba(0,0,0,0.3);
   color: black;
   padding: 2rem;
-  height: 35rem;
+  height: 150rem;
   width: 100%;
   margin:2rem;
   font-size: 3.2rem;
@@ -101,7 +101,12 @@ body {
 
 .amContainer {
   background-color: cornsilk;
-  height:100%;
+  height: 30rem;
+}
+
+.pmContainer {
+  background-color: lime;
+  height:90rem;
 }
 
 .amSide {
@@ -116,6 +121,14 @@ body {
   float: left;
   display: inline-block;
   height:10rem;
+  width: 95%;
+
+}
+
+.linesContainerPM {
+  float: left;
+  display: inline-block;
+  height:20rem;
   width: 95%;
 
 }

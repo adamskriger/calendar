@@ -52,7 +52,6 @@ export default class Event extends React.Component {
       <div className="title">{this.props.title}</div>
       <div className="start_time">{this.props.start_time}</div>
       <div className="location">{this.props.location}</div>
-      <strong>{this.props.time}</strong>
 
       </div>
     );

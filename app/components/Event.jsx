@@ -2,6 +2,8 @@ import AltContainer from 'alt-container';
 import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
+const ReactDOM = require('react-dom')
+
 
 export default class Event extends React.Component {
 
@@ -21,8 +23,11 @@ export default class Event extends React.Component {
     }
 }
 
-  componentDidUpdate() {
+  componentDidMount() {
+    
+    var x= ReactDOM.findDOMNode(this)
 
+  $('#9').append(x)
   }
 
 

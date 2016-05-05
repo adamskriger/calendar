@@ -20,10 +20,7 @@ export default class Calendar extends React.Component {
 }
 
   componentDidMount() {
-    var x= ReactDOM.findDOMNode(this.refs.moved)
-    console.log(this.props.start_time);
 
-  $('#nine').append(x)
 }
 
   render() {
@@ -46,7 +43,7 @@ export default class Calendar extends React.Component {
         <div className="amSide">AM</div>
         <div className="linesContainer">
           <div className="hourBlock">
-              <div id="nine" className="time">
+              <div id="9" className="time">
               {moment().format('9:00')}
               </div>
               <div className="halfHour">

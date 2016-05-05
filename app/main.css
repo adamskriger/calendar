@@ -145,3 +145,9 @@ body {
   height: 5rem;
   background-color: blue;
 }
+
+.timeShow {
+  width: 15rem;
+  display: inline;
+  float:left;
+}

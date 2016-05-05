@@ -44,26 +44,26 @@ export default class Calendar extends React.Component {
         <div className="linesContainer">
           <div className="hourBlock">
               <div id="9" className="time">
-              {moment().format('9:00')}
+              <div className="timeShow"> {moment().format('9:00')} </div>
               </div>
               <div className="halfHour">
-                {moment().format('9:30')}
+                <div className="timeShow">{moment().format('9:30')}</div>
               </div>
           </div>
           <div className="hourBlock">
             <div id="10" className="time">
-            {moment().format('10:00')}
+            <div className="timeShow">{moment().format('10:00')}</div>
             </div>
             <div className="halfHour">
-              {moment().format('10:30')}
+            <div className="timeShow">{moment().format('10:30')}</div>
             </div>
           </div>
           <div className="hourBlock">
             <div id='11' className="time">
-            {moment().format('11:00')}
+            <div className="timeShow">{moment().format('11:00')}</div>
             </div>
             <div className="halfHour">
-              {moment().format('11:30')}
+            <div className="timeShow">{moment().format('11:30')}</div>
             </div>
           </div>
         </div>

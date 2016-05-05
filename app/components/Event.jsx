@@ -24,10 +24,10 @@ export default class Event extends React.Component {
 }
 
   componentDidMount() {
-    
-    var x= ReactDOM.findDOMNode(this)
 
-  $('#9').append(x)
+    var x= ReactDOM.findDOMNode(this)
+    var y = this.props.time
+  $('#' + y).append(x)
   }
 
 

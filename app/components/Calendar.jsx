@@ -51,7 +51,7 @@ export default class Calendar extends React.Component {
               </div>
           </div>
           <div className="hourBlock">
-            <div className="time">
+            <div id="10" className="time">
             {moment().format('10:00')}
             </div>
             <div className="halfHour">
@@ -59,7 +59,7 @@ export default class Calendar extends React.Component {
             </div>
           </div>
           <div className="hourBlock">
-            <div className="time">
+            <div id='11' className="time">
             {moment().format('11:00')}
             </div>
             <div className="halfHour">

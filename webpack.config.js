@@ -39,6 +39,7 @@ const common = {
         loaders: ['style', 'css'],
         //Include accepts either a path or an array of paths
         include: PATHS.app
+
       },
       //set up JSX. This accepts js too thanks to RegExp
       {
@@ -101,9 +102,9 @@ if(TARGET === 'build' || TARGET === 'stats') {
     },
     output: {
       path: PATHS.build,
+      filename: 'bundle.js',
+
       // Output using entry name
-      filename: '[name].[chunkhash].js',
-      chunkFilename: '[chunkhash].js'
     },
     module: {
       loaders: [

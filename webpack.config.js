@@ -102,9 +102,9 @@ if(TARGET === 'build' || TARGET === 'stats') {
     },
     output: {
       path: PATHS.build,
-      filename: 'bundle.js',
-
       // Output using entry name
+      filename: '[name].[chunkhash].js',
+      chunkFilename: '[chunkhash].js'
     },
     module: {
       loaders: [

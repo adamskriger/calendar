@@ -60,7 +60,7 @@ export default class Event extends React.Component {
           display: 'inline-block',
           position: 'relative',
           height: '10rem',
-          width: '30%',
+          width: '25%',
           marginLeft: '1.1rem'
 
             }

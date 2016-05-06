@@ -2,10 +2,14 @@
   "name": "Portfolio",
   "version": "1.0.0",
   "description": "Portfolio Site",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamskriger/calendar.git"
   },
   "author": "Adam Kriger",
   "license": "ISC",
